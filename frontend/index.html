@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini CRM</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+
+    <div class="logo">
+        📋</div> <h2>Mini CRM</h2>
+    
+
+    <div class="title">
+        <h1>Client Lead Management System</h1>
+        <p>Manage all your customer leads efficiently</p>
+    </div>
+
+</header>
+    <div class="dashboard">
+
+    <div class="card total">
+    <span>📊</span>
+    <h3>Total Leads</h3>
+    <h2 id="totalLeads">0</h2>
+</div>
+
+    <div class="card new">
+    <span>🟢</span>
+    <h3>New</h3>
+    <h2 id="newLeads">0</h2>
+</div>
+
+    <div class="card contacted">
+    <span>📞</span>
+    <h3>Contacted</h3>
+    <h2 id="contactedLeads">0</h2>
+</div>
+
+    <div class="card converted">
+    <span>🏆</span>
+    <h3>Converted</h3>
+    <h2 id="convertedLeads">0</h2>
+</div>
+
+</div>
+    <div class="form-box">
+
+        <input type="text" id="name" placeholder="Client Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="source" placeholder="Lead Source">
+
+        <select id="status">
+            <option>New</option>
+            <option>Contacted</option>
+            <option>Converted</option>
+        </select>
+
+        <textarea id="notes" placeholder="Notes"></textarea>
+
+        <button onclick="addLead()">➕ Add New Lead</button>
+
+    </div>
+    
+    <div class="toolbar">
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Search Client Name or Email..."
+onkeyup="displayLeads()">
+
+<select id="filter" onchange="displayLeads()">
+
+<option value="All">📂 All Status</option>
+<option value="New">🟢 New</option>
+<option value="Contacted">📞 Contacted</option>
+<option value="Converted">🏆 Converted</option>
+</select>
+
+</div>
+
+    <h2>📋 Client Leads</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Source</th>
+    <th>Status</th>
+    <th>Notes</th>
+    <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="leadTable">
+
+        </tbody>
+
+    </table>
+
+</div>
+<div id="toast" class="toast">
+    ✅ Lead added successfully!
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+Mini CRM • Developed by Sakshi Zope
+</footer>
+</body>
+</html>
