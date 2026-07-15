@@ -463,7 +463,9 @@ font-size:15px;
 }
 
 .form-box{
+    width:100%;
     padding:20px;
+    box-sizing:border-box;
 }
 
 .form-box input,
@@ -471,6 +473,7 @@ font-size:15px;
 .form-box textarea,
 .form-box button{
     width:100%;
+     box-sizing:border-box;
 }
 
 .toolbar{
@@ -521,12 +524,22 @@ tbody td{
 @media (max-width:768px){
 
 .toolbar{
+       width:100%;
+    display:flex;
     flex-direction:column;
+    gap:12px;
+    
 }
 
 .toolbar input,
 .toolbar select{
     width:100%;
+      box-sizing:border-box;
 }
 
+}
+table{
+    width:100%;
+    display:block;
+    overflow-x:auto;
 }
