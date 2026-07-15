@@ -494,3 +494,39 @@ footer{
 }
 
 }
+/* Mobile Table */
+
+@media (max-width:768px){
+
+table{
+    width:100%;
+    display:block;
+    overflow-x:auto;
+}
+
+thead th,
+tbody td{
+    padding:10px;
+    font-size:14px;
+    white-space:nowrap;
+}
+
+}
+.toolbar{
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+@media (max-width:768px){
+
+.toolbar{
+    flex-direction:column;
+}
+
+.toolbar input,
+.toolbar select{
+    width:100%;
+}
+
+}
