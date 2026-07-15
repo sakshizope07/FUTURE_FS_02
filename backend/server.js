@@ -97,6 +97,25 @@ app.put("/api/leads/:id", async (req, res) => {
     }
 
 });
+app.delete("/api/leads/:id", async (req, res) => {
+
+    try {
+
+        await Lead.findByIdAndDelete(req.params.id);
+
+        res.status(200).json({
+            message: "Lead Deleted Successfully"
+        });
+
+    } catch (error) {
+
+        res.status(500).json({
+            message: error.message
+        });
+
+    }
+
+});
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });

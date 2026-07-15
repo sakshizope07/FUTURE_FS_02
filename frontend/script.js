@@ -31,7 +31,7 @@ function addLead() {
 
     clearForm();
 
-    showToast();
+    alert("Lead Added Successfully!");
 }
 
 function displayLeads() {
@@ -43,6 +43,7 @@ function displayLeads() {
 let newCount = 0;
 let contactedCount = 0;
 let convertedCount = 0;
+let displayedLeads = 0;   
 
 let search =
 document.getElementById("search").value.toLowerCase();
@@ -50,7 +51,7 @@ document.getElementById("search").value.toLowerCase();
 let filter =
 document.getElementById("filter").value;
     leads.forEach((lead,index)=>{
-        let displayedLeads = 0;
+
        
 if(
 !lead.name.toLowerCase().includes(search) &&
