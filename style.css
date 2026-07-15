@@ -437,3 +437,60 @@ font-size:15px;
     font-weight: 600;
     cursor: pointer;
 }
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width:768px){
+
+.container{
+    width:95%;
+    padding:15px;
+}
+
+.header{
+    flex-direction:column;
+    text-align:center;
+}
+
+.title h1{
+    font-size:28px;
+}
+
+.dashboard{
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.form-box{
+    padding:20px;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea,
+.form-box button{
+    width:100%;
+}
+
+.toolbar{
+    flex-direction:column;
+    gap:10px;
+}
+
+.toolbar input,
+.toolbar select{
+    width:100%;
+}
+
+table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+footer{
+    text-align:center;
+}
+
+}
