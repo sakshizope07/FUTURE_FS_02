@@ -294,34 +294,27 @@ background:linear-gradient(135deg,#7E57C2,#AB47BC);
 /* ===========================
             TABLE
 =========================== */
-
 table{
     width:100%;
     min-width:900px;
-    margin-top:25px;
     border-collapse:collapse;
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,.10);
 }
 
 thead{
     background:#1976D2;
 }
 
-th{
-    color:#fff;
+th,
+td{
     padding:18px;
-    font-size:17px;
     text-align:center;
 }
 
-td{
-    padding:16px;
-    text-align:center;
-    border-bottom:1px solid #eee;
+th{
+    color:white;
+    font-size:17px;
 }
+
 td{
     border-bottom:1px solid #eee;
 }
@@ -332,9 +325,7 @@ tbody tr:nth-child(even){
 
 tbody tr:hover{
     background:#eef6ff;
-    transition:.3s;
 }
-
 /* ===========================
         STATUS BADGES
 =========================== */
@@ -555,7 +546,6 @@ body{
 }
 
 /* Table Scroll */
-
 
 /* Buttons */
 
