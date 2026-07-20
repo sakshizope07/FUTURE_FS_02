@@ -272,12 +272,32 @@ background:linear-gradient(135deg,#7E57C2,#AB47BC);
     font-size:16px;
 
 }
+
+/* ===========================
+        TABLE CONTAINER
+=========================== */
+
+.table-title{
+    margin:35px 0 18px;
+    font-size:34px;
+    color:#2c3e50;
+}
+
+.table-container{
+    width:100%;
+    overflow-x:auto;
+    background:white;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+}
+
 /* ===========================
             TABLE
 =========================== */
 
 table{
     width:100%;
+    min-width:900px;
     margin-top:25px;
     border-collapse:collapse;
     background:#fff;
@@ -300,6 +320,9 @@ th{
 td{
     padding:16px;
     text-align:center;
+    border-bottom:1px solid #eee;
+}
+td{
     border-bottom:1px solid #eee;
 }
 
@@ -533,11 +556,6 @@ body{
 
 /* Table Scroll */
 
-table{
-    display:block;
-    overflow-x:auto;
-    white-space:nowrap;
-}
 
 /* Buttons */
 
